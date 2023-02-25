@@ -1,0 +1,65 @@
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.section{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.task_container{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 1rem;
+    height: 100vh;
+
+    /* border: 7px solid rgb(196, 196, 196); */
+    overflow-y:auto;
+    
+}
+
+.task_container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.task_container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+.task_container::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+.task_container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.usercontainer{
+    display: flex;
+}
+.usercontent{
+    background-color: #d0e0f1;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.userid{
+    background-color: #ebf3ff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 1rem;
+    font-size: small;
+
+
+}
+

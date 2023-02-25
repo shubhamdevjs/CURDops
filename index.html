@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURD</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body style="background-color: #ebf3ff" onload="loadExistingData()">
+    <div class="container-fluid">
+      <h1>CRUD operations through Local Storage</h1>
+    </div>
+    <div class="container">
+      <section class="task_container"><h2>User list</h2></section>
+
+      <div class="section">
+        <h2>Add User</h2>
+        <div>
+          <label for="fullName" class="form-label"> Full Name</label>
+          <input type="text" id="fullName" placeholder="Joseph Samuel" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="josephsamuel@xyz.com" />
+        </div>
+        <div>
+          <label for="dateofBirth">Date of Birth:</label>
+          <input type="date" id="dateofBirth" placeholder="2/5/1998" />
+        </div>
+        <div>
+          <label for="hobby" class="form-label">Hobby:</label>
+          <input name="hobby" id="hobby" placeholder="Enter your hobby" />
+        </div>
+        <div>
+          <h4>Select Country, State, City</h4>
+          <form class="dropdown-group">
+            <select id="Country" size="1">
+              <option value="" selected="selected">-- Select Country --</option>
+            </select>
+
+            <select id="State" size="1">
+              <option value="" selected="selected">-- Select State --</option>
+            </select>
+
+            <select id="City" size="1">
+              <option value="" selected="selected">-- Select City --</option>
+            </select>
+          </form>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary" onclick="addCard()">
+            Add User
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+  <script src="index.js"></script>
+</html>
